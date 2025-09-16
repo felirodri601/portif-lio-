@@ -1,0 +1,273 @@
+ @import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Share+Tech&display=swap');
+
+
+ :root{
+  --cor-primaria: #E63946;
+  --cor-secundaria: #6a040f;
+  --cor-terciaria: black;
+  --cor-hover: #9D0208;
+
+  --fonte-primaria: "Poppins", sans-serif;
+  --fonte-secundaria: 'Share Tech', sans-serif;
+  --fonte-terciaria: "Roboto", sans-serif;
+  --fonte-quartiaria: "Open Sans", sans-serif;
+
+ }
+
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background-color: #E63946;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.cabecalho {
+  padding: 1.5% 0 0 15%;
+  background-color: #000;
+  margin-bottom: 1%;
+}
+
+.cabecalho__menu {
+  display: flex;
+  justify-content: left;
+  gap: 65px;
+  margin: 1%;
+  height: 7vh;
+}
+
+.cabecalho__menu__links {
+  font-family: "Share Tech", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  transition: all 0.3s ease; 
+}
+
+.cabecalho__menu__links:hover {
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: rgba(255,255,255,0.1);
+}
+
+.logo {
+  color: #fff;
+}
+
+.apresentacao {
+  display: flex;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  padding: 1%;
+  min-height: 80vh;
+}
+
+.apresentacao__conteudo {
+  max-width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #FF6B6B; 
+  color: #ffffff;
+  padding: 2rem;
+  border: solid black;
+  border-radius: 5px;
+  height: auto;
+  margin-left: 1%;
+}
+
+.apresentacao__conteudo__titulo h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings: "wdth" 580;
+  font-size: 3.125rem;
+  color: #6A040F;
+  text-shadow:
+    3px 3px 0 black,
+        -4px 3px 2px black,
+        3px -3px 2px black,
+        -4px -3px 5px black;
+  text-align: center;
+}
+
+.apresentacao__conteudo__titulo h2 {
+  font-family: 'Share Tech', sans-serif;
+  color: #9D0208;
+    -webkit-text-stroke: 1px black;
+    font-size: 3.125rem;
+    text-align: center;
+}
+
+.apresentacao__conteudo__paragrafo {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+  font-size: 1.25rem;
+  text-align: center;
+  color: #000;
+}
+
+.apresentacao__link__h3 {
+display: flex;  
+justify-content: center;
+font-family: 'Share Tech', sans-serif;
+color: #000;
+font-size: 1.3rem;
+}
+
+.apresentacao__links {
+  display: flex;
+  gap: 20px;
+justify-content: space-between;
+}
+
+.apresentacao__link__links {
+  display: flex;
+  text-decoration: none;
+  padding-top: 3px;
+  border: 3px inset black;
+  width: 35%;
+  height: 30%;
+  background-color: #6A040F;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  font-size: 1.72rem;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  transition: all 0.5s;
+}
+
+.apresentacao__link__links span {
+  text-align: center;
+  margin: 3px;
+  display: flex;
+  justify-content: center;
+  word-break: break-word
+}
+
+.apresentacao__link__links__icone {
+  height: auto;
+  width: 35%;
+  margin: 2px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.apresentacao__link__links:hover .apresentacao__link__links__icone {
+  filter: brightness(0) invert(1);
+}
+
+.apresentacao__link__links:hover {
+  transition: all 0.5s;
+  color: #fff;
+  background-color: #9D0208;
+  border: 3px inset white;
+}
+
+.apresentacao__conteudo__imagem {
+  height: 50%;
+  width: 45%;
+  border-radius: 12px;
+  box-shadow:  3px 0 black,
+        -3px 3px 5px black,
+        3px -3px 5px black,
+        -3px -3px 5px black;
+}
+
+.rodape {
+  background-color: #000;
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  padding: 24px;
+  margin-top: 1%;
+  font-family: "Share Tech", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media (max-width: 1001px) {
+
+.cabecalho {
+  padding: 1% 0 0 10%;
+  margin-bottom: 0;
+}
+
+.cabecalho__menu {
+  justify-content: center;
+  margin-right: 15%;
+}
+
+.apresentacao {
+  flex-direction: column-reverse;
+}
+
+.apresentacao__conteudo {
+  width: auto;
+  max-width: 85%;
+  margin-right: 2%;
+  margin-top: 2%;
+}
+.apresentacao__conteudo__imagem {
+  height: auto;
+  width: 80%;
+  margin-top: 0;
+}
+
+.apresentacao__conteudo__titulo h1 {
+  font-size: 4.2rem;
+}
+
+.apresentacao__conteudo__titulo h2 {
+  font-size: 3.5rem;
+}
+
+.apresentacao__conteudo__paragrafo {
+  font-size: 2rem;
+}
+
+.apresentacao__link__h3 {
+  font-size: 2.2rem;
+}
+
+.apresentacao__link__links {
+  width: 40%;
+}
+
+}
